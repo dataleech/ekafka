@@ -1,0 +1,6 @@
+{application, ekafka, [
+    {description, "Kafka messaging system client"},
+    {vsn, "0.0.1"},
+    {application, [kernel, stdlib, ezk]},
+    {mod, {ekafka_app, []}}
+]}.

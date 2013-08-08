@@ -9,6 +9,9 @@ compile:
 deps:
 	@$(REBAR) get-deps
 
+clean:
+	@$(REBAR) clean
+
 run:
 	@$(REBAR) compile skip_deps=true
-	@$(LIBS) erl -pa ebin -s ekafka
+	@$(LIBS) erl -pa ebin -config ekafka -s ekafka
